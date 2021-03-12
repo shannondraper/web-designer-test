@@ -1,17 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<title>My Project</title>
+	<title>Later Web Designer Test</title>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:wght@300;400;500&display=swap"
+		rel="stylesheet">
+
 	<link rel="stylesheet" href="public/styles/style.css">
 </head>
-<body>
 
-	<div class="container">
-		<h1>Hello Shannon</h1>
-	</div>
+<body>
+	<nav class="container flex">
+		<img src="./public/assets/logo.svg" alt="Later">
+		<div class="nav-list flex">
+			<ul class="flex">
+				<li><a href="#">Platform</a></li>
+				<li><a href="#">Pricing</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">More</a></li>
+			</ul>
+			<ul class="flex">
+				<li><a href="#">Sign In</a></li>
+				<li><a class="cta-grey" href="#">Create Account</a></li>
+			</ul>
+		</div>
+	</nav>
+	<header class="bg-sand">
+		<div class="container flex">
+			<div>
+				<h1>Your one-stop shop for social media content creation</h1>
+				<p>Supercharge your social strategy with easy-to-find,
+					easy-to-share, totally on-brand content.</p>
+				<a class="cta-arrow cta-gradient" href="#">Create Free Account</a>
+			</div>
+			<div class="hero-img">
+				<!-- background image goes here -->
+			</div>
+		</div>
+	</header>
+	<section class="helpful-links bg-sand">
+		<div class="container flex">
+			<img src="./public/assets/icon-instagram.svg" alt="instagram"> <!-- instagram icon -->
+			<ul class="flex">
+				<li><a href="#">Collect & Create</a></li>
+				<li><a href="#">Instagram stories scheduling</a></li>
+				<li><a href="#">Best Time to Post</a></li>
+				<li><a href="#">Instagram analytics</a></li>
+				<li><a href="#">Instagram auto publish</a></li>
+			</ul>
+		</div>
+	</section>
+	<section class="feature">
+		<div class="container flex">
+			<div>
+				<h2>Find (and share) authentic user-generated content</h2>
+				<article class="accordion">
+					<a href="#" class="selected">
+						<h3>Search by hashtag</h3>
+						<p>Keep a list of industry hashtags, browse the latest
+							posts with those hashtags, then engage or even
+							re-share to your feed.</p>
+					</a>
+					<a href="#">
+						<h3>Search by @mentions and tags</h3>
+					</a>
+					<a href="#">
+						<h3>Keep proper attribution</h3>
+					</a>
+				</article>
+			</div>
+			<div class="feature-img">
+			</div>
+		</div>
+	</section>
+
+	<section class="reviews bg-sand">
+		<div class="container flex">
+			<article>
+				<img src="./public/assets/five-stars.svg" alt="5 out of 5 stars">
+				<blockquote>
+					“My favorite thing about using Later is how intuitive and
+					visual the platform is. Maintaining a consistent feed for
+					HIPPEAS was our top priority and Later’s grid preview was
+					exactly what we needed to organize our content. Our
+					marketing team is spread across the US and UK, so having
+					Later really helped us all stay connected.”
+				</blockquote>
+				<div class="review-author flex">
+					<img src="./public/assets/review-bella-ly.png" alt="">
+					<div>
+						<p class="bold">Bella Ly</p>
+						<p>Social Media Manager - HIPPEAS Snacks</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<img src="./public/assets/five-stars.svg" alt="5 out of 5 stars">
+				<blockquote>
+					“We love using Later because not only does it allow us to
+					visually see our images laid out on a calendar week by week,
+					but it shows us the best time to post. We wouldn't go anywhere
+					else to schedule and curate our social media - biggest fans
+					of the Later team and the technology they've created!”
+				</blockquote>
+				<div class="review-author flex">
+					<img src="./public/assets/review-bella-ly.png" alt="">
+					<div>
+						<p class="bold">Megan White</p>
+						<p>Brand Marketing Associate - Artifact Uprising</p>
+					</div>
+				</div>
+			</article>
+		</div>
+	</section>
+	<footer>
+		<div class="container flex">
+			<div>
+				<h2>Try the Instagram planner trusted by over 4 million people</h2>
+				<p>Whether you’re new to social marketing, or you’re a big brand that needs a simple solution, we’ve
+					got your back.</p>
+			</div>
+			<a class="cta-arrow cta-outline" href="">Get Started</a>
+		</div>
+	</footer>
+
 
 	<script src="public/scripts/main.js"></script>
-	
 </body>
+
 </html>

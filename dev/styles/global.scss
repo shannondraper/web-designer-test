@@ -1,0 +1,145 @@
+$ff-rubik: "Rubik", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$ff-poppins: "Poppins", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$box-shadow: 0 1px 6px 1px rgba(0,0,0,0.05);
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $ff-poppins;
+    font-weight: 500;
+}
+
+p,
+blockquote,
+li,
+.cta {
+    font-family: $ff-rubik;
+    font-weight: 400;
+}
+header,
+section {
+    padding: 70px 0;
+}
+ul {
+    padding-left: 0;
+    li {
+        list-style-type: none;
+    }
+}
+.bold {
+    font-weight: 600;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    > div {
+        width: 50%;
+    }
+}
+/*** Color Variables ***/
+$lightPurple: #95A3F8;
+$purple : #4140B0;
+$lightPink: #EE85D3;
+$pink : #FE7CD7;
+$black : #000000;
+$lightGrey : #F7F7F7;
+$darkGrey : #7E8993; // secondary text
+$sand : #FAF8F5; //for backgrounds
+$orange: #F4B640;
+$green: #90C999;
+$primaryBorder: #EDE9E9;
+
+$primaryGradient : linear-gradient(90deg, #433CB7, #FE7CD7);
+$primaryText : $black;
+$secondaryText: $darkGrey;
+
+/*** Typography ***/
+
+h1 {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 0;
+    + p {
+        font-family: $ff-rubik;
+        font-size: 21px;
+        color: $secondaryText;
+        line-height: 1.5;
+        font-weight: 400;
+        padding-right: 60px;
+    }
+}
+h2 {
+    font-size: 28px;
+    font-weight: 500;
+}
+h3 {
+    font-family: $ff-rubik;
+    font-size: 18px;
+    font-weight: 500;
+}
+a {
+    text-decoration: none;
+    color: $primaryText;
+}
+.bg-sand {
+    background-color: $sand;
+}
+.cta-arrow {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: url('../../public/assets/cta-arrow.svg');
+        width: 7px;
+        height: auto;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.cta-gradient {
+    display: inline-block;
+    background: $primaryGradient;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    font-family: $ff-rubik;
+    padding-right: 45px;
+}
+.cta-outline {
+    display: inline-block;
+    background: transparent;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px 45px 10px 35px;
+    color: white;
+    border: 1px solid white;
+    transition: 0.2s all ease;
+    &:hover {
+        background: rgba(255,255,255,0.1);
+    }
+}
+.cta-grey {
+    display: inline-block;
+    background: $lightGrey;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    color: $primaryText;
+    font-weight: 500;
+    transition: 0.2s all ease;
+    font-size: 14px;
+    &:hover {
+        background: #e6e5e5;
+        color: $primaryText;
+    }
+}
