@@ -3,28 +3,28 @@
 
 nav {
 	img {
-		margin-right: 40px;
+		margin-right : 40px;
 	}
 	.nav-list {
-		justify-content: space-between;
-		width: 100%;
+		justify-content : space-between;
+		width           : 100%;
 	}
 	ul {
-		align-items: center;
+		align-items : center;
 		li {
-			padding: 0 15px;
+			padding : 0 15px;
 		}
 	}
 	a {
-		font-weight: 300;
+		font-weight : 300;
 	}
 	a:hover {
-		color: $secondaryText;
+		color : $secondaryText;
 	}
 }
 header {
 	.container > div {
-		padding: 50px 0;
+		padding : 50px 0;
 		&:first-child {
 			width : 40%;
 		}
@@ -35,142 +35,142 @@ header {
 }
 
 .hero-img {
-	background-image: url('../../public/assets/hero-img.png');
-	background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
+	background-image    : url('../../public/assets/hero-img.png');
+	background-position : right;
+	background-size     : contain;
+	background-repeat   : no-repeat;
 }
 
 .helpful-links {
-	padding: 0;
-	border-top: 1px solid $primaryBorder;
-	border-bottom: 1px solid $primaryBorder;
+	padding       : 0;
+	border-top    : 1px solid $primaryBorder;
+	border-bottom : 1px solid $primaryBorder;
 	.flex {
-		justify-content: space-between;
+		justify-content : space-between;
 	}
 	ul li {
-		margin: 0 15px;
-		position: relative;
+		margin   : 0 15px;
+		position : relative;
 		&::after {
-			position: absolute;
-			content: '';
-			border-right: 1px solid $darkGrey;
-			top: 0;
-			bottom: 0;
-			right: -15px;
+			position     : absolute;
+			content      : '';
+			border-right : 1px solid $darkGrey;
+			top          : 0;
+			bottom       : 0;
+			right        : -15px;
 		}
 		&:last-of-type::after {
-			border-right: none;
+			border-right : none;
 		}
 	}
 	a {
-		font-size: 15px;
-		text-decoration: none;
-		color: $secondaryText;
-		transition: 0.2s all ease;
+		font-size       : 15px;
+		text-decoration : none;
+		color           : $secondaryText;
+		transition      : 0.2s all ease;
 		&:hover {
-			color: $primaryText;
+			color : $primaryText;
 		}
 	}
 }
 .feature {
 	.flex {
-		justify-content: space-between;
+		  justify-content : space-between;
 		& > div:first-of-type {
-			width: 40%;
+			width : 40%;
 		}
 		& > div:last-of-type {
-			width: 50%;
+			width : 50%;
 		}
 	}
 	.accordion {
 		a {
-			text-decoration: none;
-			color: $primaryText;
-			display: block;
-			padding: 10px 100px 10px 25px;
-			position: relative;
-			border-bottom: 1px solid $primaryBorder;
+			text-decoration : none;
+			color           : $primaryText;
+			display         : block;
+			padding         : 10px 100px 10px 25px;
+			position        : relative;
+			border-bottom   : 1px solid $primaryBorder;
 			&::after {
-				position: absolute;
-				content: url('../../public/assets/chevron-down.png');
-				width: 25px;
-				right: 35px;
-				top: 35px;
+				position : absolute;
+				content  : url('../../public/assets/chevron-down.png');
+				width    : 25px;
+				right    : 35px;
+				top      : 35px;
 			}
 			p {
-				font-size: 16px;
-				line-height: 1.5;
+				font-size   : 16px;
+				line-height : 1.5;
 			}
 		}
 		.selected {
-			box-shadow: $box-shadow;
-			border-left: 2px solid $lightPurple;
-			border-bottom: none;
+			box-shadow    : $box-shadow;
+			border-left   : 2px solid $lightPurple;
+			border-bottom : none;
 			&::after {
-				transform: rotate(180deg);
-				top: 25px;
-				width: 25px;
+				transform : rotate(180deg);
+				top       : 25px;
+				width     : 25px;
 			}
 		}
 	}
 	.feature-img {
-		background-image: url('../../public/assets/feature-img.png');
-		background-size: contain;
-		background-repeat: no-repeat;
+		background-image  : url('../../public/assets/feature-img.png');
+		background-size   : contain;
+		background-repeat : no-repeat;
 	}
 }
 
 .reviews {
-	padding: 50px 0;
+	padding : 50px 0;
 	.flex {
-		justify-content: space-between;
+		justify-content : space-between;
 	}
 	article {
-		background: white;
-		width: 49%;
-		padding: 40px;
-		border-radius: 5px;
+		background    : white;
+		width         : 49%;
+		padding       : 40px;
+		border-radius : 5px;
 		&:first-of-type {
-			border-left: 4px solid $orange;
+			border-left : 4px solid $orange;
 		}
 		&:last-of-type {
-			border-left: 4px solid $green;
+			border-left : 4px solid $green;
 		}
 	}
 	blockquote {
-		color : #323B43;
-		margin: 30px 0 60px 0;
-		line-height: 1.5;
+		color       : #323B43;
+		margin      : 30px 0 60px 0;
+		line-height : 1.5;
 
 	}
 	.review-author {
-		justify-content: unset;
-		align-items: center;
+		justify-content : unset;
+		align-items     : center;
 		img {
-			width: 60px;
-			height: 60px;
+			width  : 60px;
+			height : 60px;
 		}
 		div {
-			width: 80%;
-			padding-left: 15px;
+			width        : 80%;
+			padding-left : 15px;
 		}
 		p {
-			margin: 5px;
+			margin : 5px;
 		}
 	}
 }
 
 footer {
-	padding: 50px 0;
-	color : white;
+	padding : 50px 0;
+	color   : white;
 	.container {
-		background-color: $purple;
-		padding: 20px 30px;
-		border-radius: 5px;
+		background-color : $purple;
+		padding          : 20px 30px;
+		border-radius    : 5px;
 	}
 	.flex {
-		justify-content: space-around;
-		align-items: center;
+		justify-content : space-around;
+		align-items     : center;
 	}
 }

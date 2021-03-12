@@ -1,3 +1,5 @@
+/*** Global Variables ***/
+/*** Color Variables ***/
 h1,
 h2,
 h3,
@@ -37,7 +39,6 @@ ul {
   .flex > div {
     width: 50%; }
 
-/*** Color Variables ***/
 /*** Typography ***/
 h1 {
   font-size: 44px;
@@ -253,6 +254,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+/*** Global Variables ***/
+/*** Color Variables ***/
 h1,
 h2,
 h3,
@@ -292,7 +295,6 @@ ul {
   .flex > div {
     width: 50%; }
 
-/*** Color Variables ***/
 /*** Typography ***/
 h1 {
   font-size: 44px;
