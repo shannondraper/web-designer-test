@@ -7,7 +7,7 @@ h3,
 h4,
 h5 {
   font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 500; }
+  font-weight: 600; }
 
 p,
 blockquote,
@@ -55,13 +55,11 @@ h1 {
     color: #697279; }
 
 h2 {
-  font-size: 28px;
-  font-weight: 500; }
+  font-size: 28px; }
 
 h3 {
   font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 18px;
-  font-weight: 500; }
+  font-size: 18px; }
 
 a {
   text-decoration: none;
@@ -279,7 +277,7 @@ h3,
 h4,
 h5 {
   font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 500; }
+  font-weight: 600; }
 
 p,
 blockquote,
@@ -327,13 +325,11 @@ h1 {
     color: #697279; }
 
 h2 {
-  font-size: 28px;
-  font-weight: 500; }
+  font-size: 28px; }
 
 h3 {
   font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 18px;
-  font-weight: 500; }
+  font-size: 18px; }
 
 a {
   text-decoration: none;
@@ -550,9 +546,9 @@ header h1 {
   -webkit-box-shadow: 0 2px 12px 2px rgba(0, 0, 0, 0.07);
           box-shadow: 0 2px 12px 2px rgba(0, 0, 0, 0.07); }
   .reviews article:first-of-type {
-    border-left: 4px solid #F4B640; }
+    border-left: 5px solid #F4B640; }
   .reviews article:last-of-type {
-    border-left: 4px solid #90C999; }
+    border-left: 5px solid #90C999; }
 
 .reviews blockquote {
   color: #323B43;
@@ -578,7 +574,13 @@ header h1 {
     color: #697279; }
 
 footer {
-  color: white; }
+  color: white;
+  position: relative; }
+  footer::before {
+    position: absolute;
+    content: url("../../public/assets/decoration-triangle.svg");
+    top: -50px;
+    left: 3%; }
   footer .container {
     background-color: #4140B0;
     padding: 20px 70px;
