@@ -4,6 +4,7 @@
 nav {
 	img {
 		margin-right : 40px;
+		width        : 110px;
 	}
 	.nav-list {
 		justify-content : space-between;
@@ -30,6 +31,20 @@ header {
 		}
 		&:last-child {
 			width : 60%;
+		}
+	}
+	h1 {
+		position : relative;
+		&::after {
+			position : absolute;
+			content  : url('../../public/assets/decoration-square-dots.svg');
+			width    : 35px;
+			height   : 35px;
+			right    : -70px;
+			top      : 25px;
+		}
+		+ p {
+			padding-right : 60px;
 		}
 	}
 }
@@ -66,22 +81,37 @@ header {
 	a {
 		font-size       : 15px;
 		text-decoration : none;
-		color           : $secondaryText;
+		color           : $primaryText;
 		transition      : 0.2s all ease;
 		&:hover {
-			color : $primaryText;
+			color : $secondaryText;
 		}
 	}
 }
 .feature {
+	position : relative;
+	&::after {
+		position : absolute;
+		content  : url('../../public/assets/decoration-wave.svg');
+		width    : 35px;
+		right    : 100px;
+		bottom   : -40px;
+	}
+	h2 {
+		padding-right : 40px;
+	}
 	.flex {
-		  justify-content : space-between;
+		justify-content : space-between;
+		align-items     : center;
 		& > div:first-of-type {
 			width : 40%;
 		}
 		& > div:last-of-type {
 			width : 50%;
 		}
+	}
+	.feature-img img {
+		width : 100%;
 	}
 	.accordion {
 		a {
@@ -101,6 +131,7 @@ header {
 			p {
 				font-size   : 16px;
 				line-height : 1.5;
+				color       : $secondaryText;
 			}
 		}
 		.selected {
@@ -114,15 +145,9 @@ header {
 			}
 		}
 	}
-	.feature-img {
-		background-image  : url('../../public/assets/feature-img.png');
-		background-size   : contain;
-		background-repeat : no-repeat;
-	}
 }
 
 .reviews {
-	padding : 50px 0;
 	.flex {
 		justify-content : space-between;
 	}
@@ -131,6 +156,7 @@ header {
 		width         : 49%;
 		padding       : 40px;
 		border-radius : 5px;
+		box-shadow: 0 2px 12px 2px rgba(0,0,0,0.07);
 		&:first-of-type {
 			border-left : 4px solid $orange;
 		}
@@ -140,7 +166,7 @@ header {
 	}
 	blockquote {
 		color       : #323B43;
-		margin      : 30px 0 60px 0;
+		margin      : 30px 0;
 		line-height : 1.5;
 
 	}
@@ -158,19 +184,154 @@ header {
 		p {
 			margin : 5px;
 		}
+		p:not(.bold) {
+			color: $secondaryText;
+		}
 	}
 }
 
 footer {
-	padding : 50px 0;
-	color   : white;
+	color : white;
 	.container {
 		background-color : $purple;
-		padding          : 20px 30px;
+		padding          : 20px 70px;
 		border-radius    : 5px;
 	}
 	.flex {
 		justify-content : space-around;
 		align-items     : center;
+		> div:first-of-type {
+			width : 45%;
+		}
+		> div:last-of-type {
+			width      : 30%;
+			text-align : center;
+		}
+	}
+	p {
+		line-height : 1.5;
+	}
+}
+
+
+@media (max-width: $size-lg) {
+	.feature h2 {
+		padding-right : 0;
+	}
+}
+@media (max-width: $size-md) {
+	header .flex {
+		flex-direction : column;
+		> div:first-child,
+		> div:last-child {
+			width      : 100%;
+			min-height : 300px;
+			padding    : 0 5%;
+		}
+		> div:last-child {
+			background-position : center;
+		}
+		h1 + p {
+			padding-right : 0;
+		}
+	}
+
+	.helpful-links {
+		ul li {
+			text-align : center;
+		}
+	}
+	.feature {
+		.flex {
+			& > div:first-of-type {
+				width : 45%;
+			}
+		}
+	}
+	footer {
+		padding : 40px 15px;
+		.flex {
+			padding : 20px;
+			> div:first-of-type,
+			> div:last-of-type {
+				width : 50%;
+			}
+		}
+	}
+}
+
+@media (max-width: $size-sm) {
+	nav {
+		&.container {
+			padding : 10px 15px;
+		}
+		.flex ul {
+			display : none;
+		}
+	}
+	header {
+		h1::after {
+			right : -30px;
+		}
+		a {
+			margin-bottom : 30px;
+		}
+	}
+	.helpful-links {
+		text-align : center;
+		img {
+			display : none;
+		}
+		.flex {
+			flex-direction : column;
+		}
+		a {
+			padding : 5px 0;
+		}
+		ul li {
+			padding : 5px 0;
+			&::after {
+				border-right : none;
+			}
+		}
+	}
+	.feature {
+		.flex {
+			flex-direction : column;
+			& > div:first-of-type,
+			& > div:last-of-type  {
+				width : 100%;
+			}
+		}
+		.feature-img {
+			margin-top : 30px;
+			text-align : center;
+			img {
+				width : 80%;
+			}
+		}
+	}
+	.reviews {
+		.container.flex {
+			flex-direction : column;
+		}
+		article {
+			width : 100%;
+			&:first-of-type {
+				margin-bottom : 20px;
+			}
+		}
+	}
+	footer {
+		.flex {
+			flex-direction : column;
+			> div:first-of-type,
+			> div:last-of-type {
+				width : 100%;
+			}
+			.cta-outline {
+				margin : 20px 0;
+			}
+		}
 	}
 }

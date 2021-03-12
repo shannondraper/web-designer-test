@@ -10,15 +10,23 @@ $lightPink     : #EE85D3;
 $pink          : #FE7CD7;
 $black         : #000000;
 $lightGrey     : #F7F7F7;
-$darkGrey      : #7E8993;  // secondary text
-$sand          : #FAF8F5;  //for backgrounds
+$darkGrey      : #697279;
+$sand          : #FAF8F5;
 $orange        : #F4B640;
 $green         : #90C999;
 $primaryBorder : #EDE9E9;
 
-$primaryGradient : linear-gradient(90deg, #433CB7, #FE7CD7);
+// linear-gradient(95.71deg, #433cb7 50.58%, #fe7cd7 108.72%)
+$primaryGradient : linear-gradient(90deg, #433CB7 50%, #FE7CD7 100%);
+$reverseGradient : linear-gradient(90deg, #FE7CD7 0%, #433CB7 70%);
 $primaryText     : $black;
 $secondaryText   : $darkGrey;
+
+/*** Responsive Size Variables ***/
+$size-lg : 1200px;
+$size-md : 992px;
+$size-sm : 767px;
+$size-xs : 400px;
 
 h1,
 h2,
@@ -37,7 +45,8 @@ li,
     font-weight : 400;
 }
 header,
-section {
+section,
+footer {
     padding : 70px 0;
 }
 ul {
@@ -63,21 +72,18 @@ ul {
     }
 }
 
-
-
 /*** Typography ***/
 h1 {
-    font-size     : 44px;
-    font-weight   : 600;
-    line-height   : 1.2;
-    margin-bottom : 0;
+    font-size   : 44px;
+    font-weight : 600;
+    line-height : 1.2;
+    margin      : 0;
     + p {
-        font-family   : $ff-rubik;
-        font-size     : 21px;
-        color         : $secondaryText;
-        line-height   : 1.5;
-        font-weight   : 400;
-        padding-right : 60px;
+        font-family : $ff-rubik;
+        font-size   : 21px;
+        line-height : 1.5;
+        font-weight : 400;
+        color       : $secondaryText;
     }
 }
 h2 {
@@ -113,11 +119,15 @@ a {
     background      : $primaryGradient;
     text-decoration : none;
     border-radius   : 25px;
-    padding         : 15px;
+    padding         : 15px 40px 15px 15px;
     color           : white;
     font-size       : 15px;
     font-family     : $ff-rubik;
-    padding-right   : 45px;
+    transition      : 0.2s all ease;
+    &:hover {
+        background : $reverseGradient;
+        padding    : 15px 42px 15px 15px;
+    }
 }
 .cta-outline {
     display         : inline-block;
@@ -130,6 +140,7 @@ a {
     transition      : 0.2s all ease;
     &:hover {
         background : rgba(255,255,255,0.1);
+        padding    : 10px 48px 10px 35px;
     }
 }
 .cta-grey {
@@ -145,5 +156,17 @@ a {
     &:hover {
         background : #e6e5e5;
         color      : $primaryText;
+    }
+}
+
+@media (max-width: $size-lg) {
+	.container {
+		padding : 0 15px;
+	}
+}
+@media (max-width: $size-md) {
+    header,
+    section {
+        padding : 40px 0;
     }
 }
