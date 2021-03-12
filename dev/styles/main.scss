@@ -81,10 +81,10 @@ header {
 	a {
 		font-size       : 15px;
 		text-decoration : none;
-		color           : $primaryText;
+		color           : $secondaryText;
 		transition      : 0.2s all ease;
 		&:hover {
-			color : $secondaryText;
+			color : $primaryText;
 		}
 	}
 }
@@ -241,6 +241,10 @@ footer {
 		h1 + p {
 			padding-right : 0;
 		}
+		h1::after {
+			right : 0;
+			top   : 55px;
+		}
 	}
 
 	.helpful-links {
@@ -258,7 +262,7 @@ footer {
 	footer {
 		padding : 40px 15px;
 		.flex {
-			padding : 20px;
+			padding : 40px;
 			> div:first-of-type,
 			> div:last-of-type {
 				width : 50%;
@@ -278,7 +282,7 @@ footer {
 	}
 	header {
 		h1::after {
-			right : -30px;
+			opacity : 0.4;
 		}
 		a {
 			margin-bottom : 30px;
@@ -340,5 +344,10 @@ footer {
 				margin : 20px 0;
 			}
 		}
+	}
+}
+@media (max-width: $size-xs) {
+	h1::after {
+		display: none;
 	}
 }
